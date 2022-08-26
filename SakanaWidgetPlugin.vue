@@ -3,7 +3,7 @@
 <script>
 import SakanaWidget from "sakana-wdiget";
 export default {
-  name: "SakanaWidget",
+  name: "SakanaWidgetPlugin",
 
   mounted() {
     document.addEventListener("DOMContentLoaded", () => {
