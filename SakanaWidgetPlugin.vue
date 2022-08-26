@@ -3,7 +3,7 @@
     <div id="sakana-widget"></div>
     <script>
       function initSakanaWidget() {
-        SakanaWidget({ defaultCharacter: {{ character }} });
+        SakanaWidget({ defaultCharacter: "{{ character }}" });
       }
     </script>
     <script
