@@ -1,0 +1,17 @@
+{
+  "name": "vuepress-plugin-sakana-widget",
+  "version": "1.0.0",
+  "description": "sakana-widget plugin for vuepress",
+  "keywords": [
+    "sakana",
+    "sakana-widget",
+    "vue",
+    "vuepress"
+  ],
+  "author": "dreamhunter2333 <dreamhunter2333@gmail.com>",
+  "license": "MIT",
+  "main": "index.js",
+  "dependencies": {
+    "sakana-wdiget": "git+https://github.com/dsrkafuu/sakana-widget.git"
+  }
+}
