@@ -3,7 +3,7 @@
     <div id="sakana-widget"></div>
     <script>
       function initSakanaWidget() {
-        SakanaWidget({ defaultCharacter: "takina" });
+        SakanaWidget({ defaultCharacter: {{ character }} });
       }
     </script>
     <script
@@ -14,25 +14,30 @@
   </div>
 </template>
 
-// <script>
+<script>
 // import SakanaWidget from "sakana-widget";
 
-// export default {
-//   name: "SakanaWidgetPlugin",
+export default {
+  name: "SakanaWidgetPlugin",
 
-//   mounted() {
-//     window.addEventListener("DOMContentLoaded", () => {
-//       SakanaWidget({ defaultCharacter: "chisato" });
-//     });
-//   },
-// };
-//
+  props: {
+    character: {
+      type: String,
+      default: "takina",
+    },
+  },
+  // mounted() {
+  //   window.addEventListener("DOMContentLoaded", () => {
+  //     SakanaWidget({ defaultCharacter: "chisato" });
+  //   });
+  // },
+};
 </script>
 
  <style>
 #sakana-widget {
   position: fixed;
-  right: 24px;
+  left: 24px;
   bottom: 24px;
 }
 </style>
