@@ -11,7 +11,5 @@
   "author": "dreamhunter2333 <dreamhunter2333@gmail.com>",
   "license": "MIT",
   "main": "index.js",
-  "dependencies": {
-    "sakana-wdiget": "git+https://github.com/dsrkafuu/sakana-widget.git"
-  }
+  "dependencies": {}
 }

@@ -2,6 +2,3 @@
 # yarn lockfile v1
 
 
-"sakana-wdiget@git+https://github.com/dsrkafuu/sakana-widget.git":
-  version "1.0.0"
-  resolved "git+https://github.com/dsrkafuu/sakana-widget.git#23c4801311949db94de08caccc1721aa29f7b15f"
