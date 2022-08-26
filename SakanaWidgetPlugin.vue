@@ -1,7 +1,10 @@
-<template></template>
+<template>
+  <div></div>
+</template>
 
 <script>
 import SakanaWidget from "sakana-wdiget";
+
 export default {
   name: "SakanaWidgetPlugin",
 
