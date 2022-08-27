@@ -3,7 +3,7 @@
     <div id="sakana-widget"></div>
     <script>
       function initSakanaWidget() {
-        SakanaWidget({ defaultCharacter: character });
+        SakanaWidget({ defaultCharacter: "chisato" });
       }
     </script>
     <script
@@ -20,12 +20,12 @@
 export default {
   name: "SakanaWidgetPlugin",
 
-  props: {
-    character: {
-      type: String,
-      default: "takina",
-    },
-  },
+  // props: {
+  //   character: {
+  //     type: String,
+  //     default: "takina",
+  //   },
+  // },
   // mounted() {
   //   window.addEventListener("DOMContentLoaded", () => {
   //     SakanaWidget({ defaultCharacter: "chisato" });
