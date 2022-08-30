@@ -2,6 +2,10 @@
 
 For vuepreess2.x
 
+```bash
+yarn add @jinmu333/vuepress-plugin-sakana --registry=https://npm.pkg.github.com
+```
+
 ```js
 plugins: [
     ['vuepress-plugin-sakana', {}]
