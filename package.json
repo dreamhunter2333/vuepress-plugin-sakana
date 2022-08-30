@@ -1,5 +1,5 @@
 {
-  "name": "vuepress-plugin-sakana",
+  "name": "@jinmu333/vuepress-plugin-sakana",
   "version": "1.0.0",
   "description": "sakana-widget plugin for vuepress",
   "keywords": [
