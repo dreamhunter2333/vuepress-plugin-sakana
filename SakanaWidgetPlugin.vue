@@ -1,18 +1,16 @@
 <template>
   <div>
-    <div id="sakana-widget"></div>
+    <div id="sakana-box" class="sakana-box"></div>
     <script v-html="initSakanaWidget"></script>
     <script
       async
       onload="initSakanaWidget()"
-      src="https://cdn.jsdelivr.net/npm/sakana-widget@1.0.0/lib/sakana.min.js"
+      src="https://cdn.jsdelivr.net/npm/sakana"
     ></script>
   </div>
 </template>
 
 <script>
-// import SakanaWidget from "sakana-widget";
-
 export default {
   name: "SakanaWidgetPlugin",
 
@@ -26,25 +24,20 @@ export default {
   computed: {
     initSakanaWidget() {
       return (
-        'function initSakanaWidget() {SakanaWidget({ defaultCharacter: "' +
+        "function initSakanaWidget() {Sakana.init({el: '.sakana-box', scale: 0.5, character: '" +
         this.character +
-        '" });}'
+        "', canSwitchCharacter: true});}"
       );
     },
   },
-
-  // mounted() {
-  //   window.addEventListener("DOMContentLoaded", () => {
-  //     SakanaWidget({ defaultCharacter: "chisato" });
-  //   });
-  // },
 };
 </script>
 
  <style>
-#sakana-widget {
+#sakana-box {
   position: fixed;
-  left: 24px;
+  left: 0;
   bottom: 24px;
+  transform-origin: 0% 100%;
 }
 </style>
