@@ -1,4 +1,4 @@
-# vuepress-plugin-sakana-widget
+# vuepress-plugin-sakana
 
 For vuepreess2.x
 

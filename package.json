@@ -1,5 +1,5 @@
 {
-  "name": "vuepress-plugin-sakana-widget",
+  "name": "vuepress-plugin-sakana",
   "version": "1.0.0",
   "description": "sakana-widget plugin for vuepress",
   "keywords": [
@@ -11,5 +11,9 @@
   "author": "dreamhunter2333 <dreamhunter2333@gmail.com>",
   "license": "MIT",
   "main": "index.js",
-  "dependencies": {}
+  "dependencies": {},
+  "repository": "https://github.com/jinmu333/vuepress-plugin-sakana.git",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  }
 }
