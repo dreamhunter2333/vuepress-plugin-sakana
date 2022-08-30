@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div id="sakana-box" class="sakana-box"></div>
+    <div id="sakana-box" class="sakana-box" v-bind:style="styleObject"></div>
     <script v-html="initSakanaWidget"></script>
     <script
       async
@@ -14,30 +14,20 @@
 export default {
   name: "SakanaWidgetPlugin",
 
-  props: {
-    character: {
-      type: String,
-      default: "chisato",
-    },
-  },
-
   computed: {
+    options() {
+      return JSON.parse ? JSON.parse(OPTIONS) : OPTIONS;
+    },
+    styleObject() {
+      return this.options.styleObject;
+    },
     initSakanaWidget() {
       return (
-        "function initSakanaWidget() {Sakana.init({el: '.sakana-box', scale: 0.5, character: '" +
-        this.character +
-        "', canSwitchCharacter: true});}"
+        "function initSakanaWidget() {Sakana.init(" +
+        JSON.stringify(this.options.config) +
+        ");}"
       );
     },
   },
 };
 </script>
-
- <style>
-#sakana-box {
-  position: fixed;
-  left: 0;
-  bottom: 24px;
-  transform-origin: 0% 100%;
-}
-</style>
