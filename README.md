@@ -8,7 +8,6 @@ plugins: [
 ]
 ```
 
-
 ```js
 plugins: [
     ['vuepress-plugin-sakana', {
