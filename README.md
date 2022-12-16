@@ -3,18 +3,18 @@
 For vuepreess2.x
 
 ```bash
-yarn add @jinmu333/vuepress-plugin-sakana --registry=https://npm.pkg.github.com
+yarn add @dreamhunter2333/vuepress-plugin-sakana --registry=https://npm.pkg.github.com
 ```
 
 ```js
 plugins: [
-    ['@jinmu333/vuepress-plugin-sakana', {}]
+    ['@dreamhunter2333/vuepress-plugin-sakana', {}]
 ]
 ```
 
 ```js
 plugins: [
-    ['@jinmu333/vuepress-plugin-sakana', {
+    ['@dreamhunter2333/vuepress-plugin-sakana', {
         config: {
             scale: 0.5,
             canSwitchCharacter: true,
